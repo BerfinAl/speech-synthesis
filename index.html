@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Speech Synthesis</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading"><h1>The Voiceinator 5000</h1></div>
+      <div class="settings">
+        <select>
+          <option value="Microsoft David - English (United States)">
+            Microsoft David - English (United States)
+          </option>
+          <option value="Microsoft Mark - English (United States)">
+            Microsoft Mark - English (United States)
+          </option>
+          <option value="Microsoft Zira - English (United States)" selected>
+            Microsoft Zira - English (United States)
+          </option>
+          <option value="Microsoft Helena - Spanish (Spain)">
+            Microsoft Helena - Spanish (Spain)
+          </option>
+          <option value="Microsoft Laura - Spanish (Spain)">
+            Microsoft Laura - Spanish (Spain)
+          </option>
+          <option value="Microsoft Pablo - Spanish (Spain)">
+            Microsoft Pablo - Spanish (Spain)
+          </option>
+          <option value="Microsoft Tolga - Turkish (Turkey)">
+            Microsoft Tolga - Turkish (Turkey)
+          </option>
+          <option value="Google Deutsch">Google Deutsch</option>
+          <option value="Google italiano">Google italiano</option>
+          <option value="Google polski">Google polski</option>
+          <option value="Google Nederlands">Google Nederlands</option>
+          <option value="Google français">Google français</option>
+        </select>
+        <label for="rate">Rate:</label>
+        <input
+          type="range"
+          name="rate"
+          id="rate"
+          min="0.1"
+          max="10"
+          step="0.1"
+          value="1"
+        />
+
+        <label for="pitch">Pitch:</label>
+        <input
+          type="range"
+          name="pitch"
+          id="pitch"
+          min="0"
+          max="2"
+          step="1"
+          value="1"
+        />
+      </div>
+
+      <textarea name="" id="" cols="30" rows="10">
+Hello! I love JavaScript 👍</textarea>
+
+      <div class="controls">
+        <button class="stop">Stop!</button>
+        <button class="speak">Speak</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
